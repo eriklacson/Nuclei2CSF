@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "nuclei2csf"
+version = "0.1.0"
+description = "A lightweight Python CLI tool that parses Nuclei scanner output and maps security findings to the NIST Cybersecurity Framework (CSF) for structured reporting and risk alignment."
+authors = ["Erik Lacson <elacson@gmail.com>"]
+license = "GNU GENERAL PUBLIC LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
