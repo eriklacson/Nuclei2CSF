@@ -1,0 +1,38 @@
+[
+  {
+    "templateID": "cves/2024/CVE-2024-12345",
+    "info": { "name": "WordPress WP-File-Manager RCE", "severity": "high" },
+    "matched-at": "https://quickclinic.io/wp-content/plugins/wp-file-manager/readme.txt",
+    "extracted-results": []
+  },
+  {
+    "templateID": "misconfiguration/ssl/tls-version",
+    "info": { "name": "TLS 1.0 / 1.1 Enabled", "severity": "high" },
+    "matched-at": "https://api.quickclinic.io",
+    "extracted-results": ["TLSv1", "TLSv1.1"]
+  },
+  {
+    "templateID": "exposed-panels/ssh-banner",
+    "info": { "name": "SSH Service Public", "severity": "high" },
+    "matched-at": "https://quickclinic.io:22",
+    "extracted-results": ["SSH-2.0-OpenSSH_7.4p1"]
+  },
+  {
+    "templateID": "misconfiguration/server-version-disclosure",
+    "info": { "name": "Server Version Disclosure", "severity": "medium" },
+    "matched-at": "https://quickclinic.io",
+    "extracted-results": ["Apache/2.4.29 (Ubuntu)"]
+  },
+  {
+    "templateID": "cves/2023/CVE-2023-45678",
+    "info": { "name": "Missing Secure Cookie Flag", "severity": "medium" },
+    "matched-at": "https://quickclinic.io/login",
+    "extracted-results": ["Set-Cookie: PHPSESSID=..."]
+  },
+  {
+    "templateID": "miscellaneous/swagger-docs",
+    "info": { "name": "Public Swagger Docs", "severity": "low" },
+    "matched-at": "https://api.quickclinic.io/docs",
+    "extracted-results": []
+  }
+]
